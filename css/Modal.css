@@ -1,0 +1,160 @@
+
+/* Reveal Modal Plugin Styles
+---------------------------------------------------*/
+.reveal-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  background: rgba(0,0,0,.8);
+  z-index: 100;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+
+.reveal-modal {
+  visibility: hidden;
+  left: 30%;
+  margin-top: 0;
+  width: 400px;
+  max-width: 400px;
+  background: #fff;
+  position: fixed;
+  z-index: 200;
+  padding: 0;
+
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+  -box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+.reveal-modal img{
+  width: 100%;
+  max-height: 400px;
+}
+
+
+
+.reveal-modal .description-box { 
+  padding: 25px !important;
+  text-align: justify !important;
+}
+.reveal-modal .description-box h4 {
+  font: 15px/24px montserrat-bold, sans-serif;
+  margin-bottom: 18px;
+  color: #000;
+  width: 100%;
+  font-weight: 900;
+  text-align: center;
+  font-size: 27px;
+  text-transform: capitalize;
+}
+.reveal-modal .description-box p {
+  color: #3B3A3A;
+  margin: 18px 0;
+  line-height: 26px;
+  font-size: 18px;
+  font-style: oblique;
+  font-family: -webkit-body;
+}
+.reveal-modal .description-box .categories {
+  text-align: center;
+  margin-bottom: -10px;
+  color: #333;
+  font: 11px/24px opensans-regular, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+}
+.reveal-modal .description-box .categories i {
+   margin-right: 8px;
+}
+.reveal-modal .link-box {
+   padding: 18px 36px;
+   background: #111;
+   text-align: left;
+}
+.reveal-modal .link-box a {
+   color: #fff;
+  font: 11px/24px opensans-regular, sans-serif;
+  text-transform: uppercase;
+   letter-spacing: 3px;
+   cursor: pointer;
+}
+.reveal-modal a:hover { color: #00CCCC; }
+.reveal-modal a.close-reveal-modal { 
+ float: right;
+
+}
+
+.nuevoaviso{
+  top: 1% !important;
+  border-radius: 5px;
+  padding-top: 0;
+}
+.nuevanoticia{
+  top: 1% !important;
+  border-radius: 5px;
+  padding-top: 0;
+}
+input[type="file"]{
+  padding: 0;
+}
+.titulonuevoaviso{
+  background: #5bc0de;
+  margin-top: 0;
+  padding: 15px;
+  border-radius: 5px 5px 0 0;
+}
+
+.titulonuevoaviso h3{
+  margin:0;
+  color: white;
+}
+
+.titulonuevoaviso .cerrarnuevoaviso{
+  width: 25px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: red;
+}
+
+.fechainicio, .fechatermino{
+  width: 100%;
+  display: inline-block;
+}
+.formnuevoaviso label{
+  margin-bottom: 15px;
+  width: 50%;
+}
+.formnuevoaviso input.date{
+  width: 50%;
+  text-align: center;
+}
+textarea{
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+body {
+	color: black !important;
+}
+
+.menu{
+	border:none;
+}
+nav a{
+	color: white !important;
+}
+
+nav ul.dropdown-menu a{
+	color: black !important;
+}
+
+.desarrolladores{
+	border-top: solid 1px;
+	padding-top:15px;
+}
+
+thead{
+	font-size: 18px;
+	font-weight: 700;
+	color:brown;
+}
+
+.myboton a{
+	text-decoration: none;
+	font-style: none;
+	color: white !important;
+}
+
+.myboton{
+	padding-right:30px;
+	padding-left:30px;
+}
+
+
+
