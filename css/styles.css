@@ -1,0 +1,356 @@
+body{
+	font-family: 'Lato', sans-serif !important;
+}
+
+
+
+/* estilo menu */
+.navbar ul li{
+	margin-left: 20px;
+
+}
+.navbar ul li a{
+	color: #fff;
+	font-size: 16px;
+}
+
+
+
+/* estilos banner */
+
+.banner{
+	width: 100%;
+	padding-bottom: 40px;
+	padding-top: 160px;
+	
+}
+.banner .img-pri{
+	position: absolute;
+	float: right;
+	top: 0;
+	right: 0;	
+}
+
+.banner h1{
+	font-size: 48px;
+}
+.banner .title strong{
+	font-size: 52px;
+	font-weight: bold;
+}
+
+.fras-sanpedro p{
+	margin-top: 15px;
+	font-size: 16px;
+}
+
+/*------ estilos para los subtitulos ---------
+
+->bienenidos
+->Noticias
+->señor de los trabajos
+->galeria
+->Notaria parroquial
+->celebraciones parroquiales   
+
+-----------------------------*/
+
+.subtitles-pri{
+	font-size: 32px;
+	font-weight: bold;
+}
+
+
+
+
+/* ------ seccion bienvenidos ------*/
+.bienvenidos{
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+.bienvenidos h2{
+	border-bottom: 2px solid #a39222;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+
+.bienvenidos p{
+	
+	font-size: 16px;
+	line-height: 35px;
+	text-align: left;
+	margin-top: 25px;
+		
+}
+
+.bienvenidos img{
+	width: 450px;
+	margin-top: 18%;
+	
+}
+
+
+.img-sombra{
+	
+	-webkit-box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.2);
+}
+
+
+/*------ seccion historia --- */
+
+.historia{
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 50px;
+
+}
+
+.historia img{
+	width: 600px;
+	
+}
+
+.historia .info{
+	padding-left: 60px;
+}
+.historia .info h3{
+    
+	font-size: 32px;
+	font-weight: bold;
+		
+}
+.historia .info p{
+	
+	font-size: 15px;
+	color: #5b5b5b;
+	line-height: 30px;
+	
+}
+
+.historia a:link{
+	text-decoration: none;
+	padding: 5px 60px 5px 60px;
+	margin-bottom: 30px;
+	display: inline-block;
+	background: #bca618;
+	color: #fff;
+	-webkit-box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
+	-moz-box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
+	box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.historia a:visited{
+	color: #fff;
+}
+
+.historia a:hover{
+	-webkit-box-shadow: -1px 11px 15px -1px rgba(188,166,24,0.72);
+	-moz-box-shadow: -1px 11px 15px -1px rgba(188,166,24,0.72);
+	box-shadow: -1px 11px 15px -1px rgba(188,166,24,0.72);
+
+}
+
+
+
+/* señor de los trabajos */
+
+
+.s-trabajos{
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 50px;
+
+}
+
+.s-trabajos h2{
+	border-bottom: 2px solid #a39222;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+
+.s-trabajos p{
+	
+	font-size: 16px;
+	line-height: 35px;
+	text-align: left;
+	margin-top: 25px;
+		
+}
+.s-trabajos span{
+	color: #a39222;
+	font-weight: bold;
+}
+
+
+.s-trabajos-img{
+	margin-top: 90px;
+	
+}
+
+.s-trabajos .historia-p{
+	padding-left: 5%;
+	font-size: 16px;
+	text-align: justify;
+	border-left: 10px solid #a39222;
+	
+}
+
+
+
+
+/*--------- seccion avisos --- */
+
+.avisos{
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding-bottom: 100px;
+	padding-top: 100px;
+	background: url(../img/noticias-im.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.avisos .card-avisos{
+	margin-top: 60px;
+	border-radius: 0px;
+	min-height: 380px;
+	border: none !important;
+	
+	
+}
+
+.avisos .card-avisos .card-header{
+	padding: 0px;
+	background: #a39222;
+	border: none !important;
+}
+.avisos .card-avisos .card-header h4{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #fff;
+	
+	
+}
+
+.avisos .card-avisos .list-avisos li{
+	font-size: 14px;
+	line-height: 30px;
+	margin-bottom: 20px;
+	border-bottom: 1px dashed #a39222;
+}
+
+
+/* noticias */
+
+.noticias h4{
+	border-bottom: 2px solid #a39222;
+	padding-bottom: 10px;
+	display: inline-block;
+	font-size: 32px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 40px;
+	
+}
+.noticias .fecha{
+	text-align: center;
+	color: #fff;
+	font-size: 36px;
+	font-weight: bold;
+}
+.noticias .fecha span{
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.noticias h5{
+	color: #fff;
+}
+.noticias p{
+	color: #727272;
+}
+.noticias p a:link{
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 50px 5px 50px;
+	margin-bottom: 30px;
+	background: #bca618;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.noticias p a:hover{
+	-webkit-box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
+	-moz-box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
+	box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
+	
+}
+.noticias p a:visited{
+	color: #fff;
+}
+
+.noticias .btn-noticias{
+	
+	border: 1px solid #bca618;
+	margin-top: 80px;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	padding: 8px 80px 8px 80px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+
+.noticias .btn-noticias:hover{
+	background: #bca618;
+	color: #000 !important;
+	font-weight: bold;
+}
+
+.noticias .btn-noticias:visited{
+	
+	color: #fff;
+	text-decoration: none;
+	
+}
+
+
+/* seccion galeria */
+
+.galeria{
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding-bottom: 100px;
+	padding-top: 100px;
+	border: 1px solid red;
+}
+
+.galeria .carousel{
+	
+	border-top: 20px solid red;
+	border-right: 20px solid red;
+	border-bottom: 40px solid red;
+	border-left: 20px solid red;
+}
+
+.carousel .carousel-inner {
+    width: 100%;
+    height: 400px;
+}
+
