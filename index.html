@@ -5,6 +5,7 @@
     <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Parroquia San Pedro Apóstol</title>
+	  	<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
 	
 	  	<!-- fuentes google lato 
 	  
@@ -12,29 +13,32 @@
 	  
 		<!-- estilos css pablo -->
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	  	
+	    <!-- iconmon -->
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
 	  
         <!-- Bootstrap CSS -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	  
 	  
   </head>
-  <body>
+  <body data-spy="scroll">
 		
 		
 		
 	 <nav class="navbar navbar-expand-lg fixed-top">
 		<div class="container">
-			<a class="navbar-brand" href="#">Navbar w/ text</a>
+			<a class="navbar-brand" href="#"><span class="icon-cross"></span> <span>Parroquia San Pedro Apóstol</span></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarText">
 					<ul class="navbar-nav ml-auto navbar-right">
-						<li class="nav-item"><a class="nav-link" href="#">Historia</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Sacerdotes</a></li>	
-						<li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Experiencias</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Notaria</a></li>
+						<li class="nav-item"><a href="#">Inicio</a></li>
+						<li class="nav-item"><a href="#historia">Historia</a></li>	
+						<li class="nav-item"><a href="#avisos">Avisos</a></li>
+						<li class="nav-item"><a href="#galeria">Galeria</a></li>
+						<li class="nav-item"><a href="#notaria">Notaria</a></li>
 					</ul>
 				</div>
 		</div>
@@ -47,7 +51,7 @@
 	  		<div class="container">
 		  		<div class="row">
 					<div class="col-lg-5">
-						<h1 class="title">Parroquia<br><strong>San Pedro Apostol</strong></h1>	
+						<h1 class="title">Parroquia<br><strong>San Pedro Apóstol</strong></h1>	
 						<div class="media" style="margin-top: 60px">
 						  <img src="img/pedro2.png" class="mr-3" alt="...">
 						  <div class="media-body fras-sanpedro">
@@ -82,7 +86,7 @@
 	  
 	   <!--seccion historia -->
 	  
-	  <section class="historia">
+	  <section class="historia" id="historia">
 	  	 <div class="container">
 		  	<div class="row">
 				<div class="col-lg-6">
@@ -136,7 +140,7 @@
 	  
 	  <!-- seccion avisos-->
 	  
-	  <section class="avisos">
+	  <section class="avisos" id="avisos">
 		  <div class="container">
 		  	<div class="row">
 				<div class="col-lg-7 noticias" style="padding-right: 10%;">
@@ -147,7 +151,7 @@
 						  <div class="media-body">
 							<h5 class="mt-0">Vigilia de la Solemnidad de la Inmaculada Concepción en la Concha.</h5>
 							<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at.</p>
-							<p><a href="#">Leer Nota</a></p>
+							  <p><a href="#">Leer Nota</a></p>
 						  </div>
 						</div>
 						<br>
@@ -165,7 +169,7 @@
 						  <div class="media-body">
 							<h5 class="mt-0">Peregrinación Diocesana y Santa Misa en la montaña de Cristo Rey.</h5>
 							<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at.</p>
-							<p><a href="#">Leer Nota</a></p>
+							  <p><a href="#">Leer Nota</a></p>
 						  </div>
 						</div>
 					
@@ -204,7 +208,7 @@
 	  
 	  <!-- seccion galeria-->
 	  
-	  <section class="galeria">
+	  <section class="galeria" id="galeria">
 	  	<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
@@ -253,15 +257,15 @@
 	  <!-- seccion notaria parroquial -->
 	  
 	  
-	  <section class="notaria">
+	  <section class="notaria" id="notaria">
 		  	<div class="container">
 				<div class="row">
 					<div class="col-lg-6 info horario">
 						<h2 class="subtitles-pri">Notaria Parroquial</h2>
 						<ul class="list-unstyled">
-							<li>Direccion: Calle Recreo #2, Mineral de Pozos Guanajuato</li>
-							<li>Telefono: 014422930060</li>
-							<li>Correo: notariaparroquiapozos@outlook.com</li>
+							<li><span class="icon-location"></span> Direccion: Calle Recreo #2, Mineral de Pozos Guanajuato</li>
+							<li><span class="icon-phone"></span> Telefono: 014422930060</li>
+							<li><span class="icon-envelope"></span> Correo: notariaparroquiapozos@outlook.com</li>
 						</ul>
 						
 						
@@ -270,11 +274,11 @@
 							<p>Horarios de atencion</p>
 							  <ul class="list-unstyled">
 								  <li class="day">Lunes, Martes, Jueves y Sabado</li>
-								  <li>De 9:00 a.m. a 2:00 p.m. y 5:00 p.m. a 7:00 p.m.</li>
+								  <li><span class="icon-clock"></span> De 9:00 a.m. a 2:00 p.m. y 5:00 p.m. a 7:00 p.m.</li>
 								  <li class="day">Miercoles</li>
-								  <li>No hay servicio</li>
+								  <li><span class="icon-cross1"></span> No hay servicio</li>
 								  <li class="day">Viernes y Domingo</li>
-								  <li>De 9:00 a.m. a 3:00 p.m</li>
+								  <li><span class="icon-clock"></span> De 9:00 a.m. a 3:00 p.m</li>
 							  </ul>
 						  </div>
 						</div>
@@ -419,7 +423,7 @@
 					<ul class="list-unstyled text">
 						<li><span>Parroquia</span></li>
 						<li><strong>San Pedro Apostol</strong></li>
-						<li class="redes"><img src="img/facebook.png" class="img-fluid" width="29px"><img src="img/instagram2.png" class="img-fluid" width="39px;"></li>
+						<li class="redes"><span class="icon-facebook2"></span><span class="icon-instagram"></span></li>
 					</ul>
 				</div>
 				
@@ -451,5 +455,31 @@
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+
+	  <script>
+        $(document).ready(function(){
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if(scroll < 200){
+                    $('.navbar').removeClass('menu');
+					$('.navbar .navbar-brand span').css({"display":"none"});
+					
+					
+                }else{
+                    $('.navbar').addClass('menu');
+					$('.navbar .navbar-brand span').css({"display":"initial"});
+					
+					
+                }      
+            })
+        })
+		  
+		 
+		  
+    </script>
+
+
+
   </body>
 </html>

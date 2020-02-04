@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
 	font-family: 'Lato', sans-serif !important;
 }
@@ -5,13 +9,40 @@ body{
 
 
 /* estilo menu */
-.navbar ul li{
-	margin-left: 20px;
+
+
+.navbar{
+	transition: all 0.5s;
+	min-height: 56px;
+}
+
+.navbar ul li a{
+	margin-left: 48px;
+	
 
 }
 .navbar ul li a{
 	color: #fff;
 	font-size: 16px;
+	text-decoration: none;
+
+	
+}
+.navbar ul li a:hover{
+	border-bottom: 4px solid #a39222;
+	text-decoration: none;
+	padding-bottom: 1em;
+}
+
+.navbar .navbar-brand span{
+	display: none;
+	color: #fff;
+}
+
+
+.menu{
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 14px 19px -1px;
+	background: #00161c;
 }
 
 
@@ -132,7 +163,7 @@ body{
 
 .historia a:link{
 	text-decoration: none;
-	padding: 5px 60px 5px 60px;
+	padding: 8px 60px 8px 60px;
 	margin-bottom: 30px;
 	display: inline-block;
 	background: #bca618;
@@ -140,9 +171,9 @@ body{
 	-webkit-box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
 	-moz-box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
 	box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
 	-webkit-transition-duration: 0.4s; /* Safari */
   	transition-duration: 0.4s;
 }
@@ -281,28 +312,23 @@ body{
 .noticias p{
 	color: #727272;
 }
-.noticias p a:link{
-	color: #fff;
-	text-decoration: none;
-	padding: 5px 50px 5px 50px;
-	margin-bottom: 30px;
-	background: #bca618;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
 
-.noticias p a:hover{
-	-webkit-box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
-	-moz-box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
-	box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
+.noticias p a{
+	color: #bca618;
+	text-decoration: none;
+	margin-bottom: 30px;
 	
 }
-.noticias p a:visited{
-	color: #fff;
+.noticias p a:hover{
+	border-bottom: 2px solid #bca618;
+	padding-bottom: 5px;
 }
+
+.noticias p a:visited{
+	color: #bca618;
+}
+
+
 
 .noticias .btn-noticias{
 	
@@ -312,13 +338,17 @@ body{
 	text-decoration: none;
 	color: #fff;
 	padding: 8px 80px 8px 80px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
 	-webkit-transition-duration: 0.4s; /* Safari */
   	transition-duration: 0.4s;
 	
 }
+
+
+
+
 
 .noticias .btn-noticias:hover{
 	background: #bca618;
@@ -384,21 +414,32 @@ body{
 	border: 1px solid #bca618;
 	display: inline-block;
 	text-decoration: none;
-	color: #000;
-	padding: 8px 80px 8px 80px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	background: #bca618;
+	color: #fff;
+	padding: 8px 60px 8px 60px;
+	-webkit-box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
+	-moz-box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
+	box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
 	-webkit-transition-duration: 0.4s; /* Safari */
   	transition-duration: 0.4s;
 	
 }
 
-.galeria .btn-galeria:hover{
-	background: #bca618;
+
+
+.galeria .btn-galeria:visited{
 	color: #fff;
 }
 
+.galeria .btn-galeria:hover{
+	-webkit-box-shadow: -1px 11px 15px -1px rgba(188,166,24,0.72);
+	-moz-box-shadow: -1px 11px 15px -1px rgba(188,166,24,0.72);
+	box-shadow: -1px 11px 15px -1px rgba(188,166,24,0.72);
+
+}
 
 /* notaria */
 
@@ -546,24 +587,33 @@ body{
 .contacto .text .redes{
 	margin-top: 20px;	
 }
-.contacto .text .redes img{
-	margin-right: 20px;	
+.contacto .text .redes span{
+	margin-right: 20px;
+	font-size: 32px;
 }
 
 .contacto .btn-contacto{
 	padding: 8px 80px 8px 80px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	border: 1px solid #00161c;
-	background: #00161c;
+	-webkit-border-radius:1005px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	border: 2px solid #fff;
 	margin-top: 35px;
 	color: #fff;
+	font-weight: bold;
 	text-decoration: none;
 	outline: none;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	background: transparent;
 	
 }
 
+.contacto .btn-contacto:hover{
+	background: #00161c;
+	border: 2px solid #00161c;
+	color: #fff;
+}
 
 .contacto .btn-contacto:visited{
 	text-decoration: none;
