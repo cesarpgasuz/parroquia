@@ -59,9 +59,12 @@ body{
 	position: absolute;
 	float: right;
 	top: 0;
-	right: 0;	
+	right: 0;
+	z-index: 0;
 }
-
+.banner .media{
+	margin-top: 40px
+}
 .banner h1{
 	font-size: 48px;
 }
@@ -120,13 +123,16 @@ body{
 	margin-top: 18%;
 	
 }
+.bienvenidos .mineral{
+	display: none;
+}
 
 
 .img-sombra{
+	-webkit-moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	-moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	
-	-webkit-box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.2);
-	box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.2);
 }
 
 
@@ -142,6 +148,9 @@ body{
 .historia img{
 	width: 600px;
 	
+}
+.historia .pedro{
+	display: none;
 }
 
 .historia .info{
@@ -224,6 +233,13 @@ body{
 	margin-top: 90px;
 	
 }
+
+.s-trabajos-img-max{
+	display: none;
+	
+}
+
+
 
 .s-trabajos .historia-p{
 	padding-left: 5%;
@@ -627,3 +643,141 @@ footer{
 	padding-top: 40px;
 	padding-bottom: 10px;
 }
+
+
+
+
+/* diseno responsive */
+
+@media screen and (max-width: 1920px){
+	.banner .media{
+		padding-right: 25%;
+	}
+}
+
+
+@media screen and (max-width: 1199px){
+	
+	/* estilos banner */
+	
+	.img-pri{
+	
+		width: 650px;
+		height: 100%;
+	}
+	.banner .media{
+		margin-top: 20px;
+	}
+	.banner .media img{
+		width: 80px;
+		margin-top: 20px;
+		position: relative;
+	}
+	
+	
+	/* seccion bienvenidos */
+	.bienvenidos img{
+		display: none;		
+	}
+	.bienvenidos .mineral{
+		display: inline-block;
+		width: 400px;
+	}
+	
+	/* seccion historia */
+	.historia img{
+		display: none;
+		
+	}
+	.historia .pedro{
+		display: block;
+		
+	}
+	
+	/* señor de los trabajos */
+	.s-trabajos-img{
+		display: none;
+	}
+	
+	.s-trabajos-img-max{
+		display: block;
+		margin-top: 85px;
+	
+	}
+	
+	
+	/* galeria */
+	.galeria h2{
+		margin-top: 40px;
+	}
+
+	
+}
+
+@media screen and (max-width: 1121px){
+	
+	.banner{
+		background: url("../img/banner-max.jpg") center center no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		
+	}
+	.img-pri{
+		display: none;
+	}
+	
+	.banner h1{
+		color: #fff;
+	}
+	.banner .title strong{
+		color: #bca618;
+	}
+
+	.fras-sanpedro p{
+		color: #fff;
+	}
+
+	
+}
+
+@media screen and (max-width: 991px){
+	
+	/* seccion banner */
+	.banner .media{
+		padding-right: 10%;
+	}
+	
+	/* seccion bienvenidos */
+	.bienvenidos .mineral{
+		margin-top: 90px;
+	}
+	.bienvenidos p{
+		line-height: 32px;
+	}
+	
+	/* señor de los trabajos */
+	.s-trabajos p{
+		line-height: 32px;
+	}
+	.s-trabajos .s-trabajos-img-max{
+		margin-top: 80px;
+	}
+	.s-trabajos .historia-p{
+		line-height: 30px;
+	}
+
+	/* seccion noticias */
+	.avisos .noticias .media .nota{
+		display: none;
+	}
+	/* galeria */
+	.galeria h2{
+		margin-top: 0px;
+	}
+	
+}
+	
+
+
