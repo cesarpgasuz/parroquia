@@ -244,7 +244,7 @@ body{
 .s-trabajos .historia-p{
 	padding-left: 5%;
 	font-size: 16px;
-	text-align: justify;
+	text-align: left;
 	border-left: 10px solid #a39222;
 	
 }
@@ -292,7 +292,7 @@ body{
 }
 
 .avisos .card-avisos .list-avisos li{
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 30px;
 	margin-bottom: 20px;
 	border-bottom: 1px dashed #a39222;
@@ -300,7 +300,9 @@ body{
 
 
 /* noticias */
-
+.avisos .noticias{
+	padding-right: 10%;
+}
 .noticias h4{
 	border-bottom: 2px solid #a39222;
 	padding-bottom: 10px;
@@ -324,9 +326,12 @@ body{
 
 .noticias h5{
 	color: #fff;
+	font-size: 20px;
+	
 }
 .noticias p{
 	color: #727272;
+	text-align: left;
 }
 
 .noticias p a{
@@ -481,16 +486,15 @@ body{
 }
 
 /* horario de atencion */
+
 .horario .card{
-	margin-right: 50px;
 	background: #00161c;
-}
-.horario .card{
-	padding-left: 15px;
+	padding-top: 15px;
 	padding-right: 15px;
 	padding-bottom: 30px;
-	padding-top: 15px;
+	padding-left: 15px;
 	margin-top: 60px;
+	margin-right: 50px;
 }
 .horario .card p{
 	text-align: center;
@@ -744,6 +748,9 @@ footer{
 
 @media screen and (max-width: 991px){
 	
+	.navbar-toggler{
+		display: none;
+	}
 	/* seccion banner */
 	.banner .media{
 		padding-right: 10%;
@@ -769,15 +776,213 @@ footer{
 	}
 
 	/* seccion noticias */
-	.avisos .noticias .media .nota{
-		display: none;
+	.avisos .card-avisos{
+		margin-top: 100px;
+	
+	}
+	.avisos .noticias{
+		padding-right: 13px;
+		
 	}
 	/* galeria */
+	.galeria .info{
+		padding-left: 40px;
+	}
 	.galeria h2{
 		margin-top: 0px;
 	}
+	.galeria p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 	
+	/* notaria */
+	.horario .card{
+		margin-right: 0px;
+	}
+	
+	/* contacto */
+	.contacto .btn-contacto{
+		margin-top: 25px;
+	}
+	.contacto .comentarios ul{
+		margin-top: 10px;
+	}
 }
 	
 
 
+@media screen and (max-width: 767px){
+	
+	/*banner */
+	.banner{
+		background: url("../img/banner-min.jpg") center center no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		
+	}
+	.banner h1 {
+		font-size: 32px;
+	}
+	.banner .title strong {
+		font-size: 38px;
+		font-weight: bold;
+	}
+
+	.banner .media{
+		padding-right: 120px;
+	}
+	.banner .media img{
+		display: none;
+	}
+	
+	.fras-sanpedro p {
+		
+		font-size: 15px;
+	}
+		
+	
+	/* bienvenidos */
+	.bienvenidos p{
+		text-align: left;
+		line-height: 30px;
+	}
+	.bienvenidos img{
+		display: block;
+		margin-top: 5%;
+	}
+	.bienvenidos .mineral{
+		display: none;
+		
+	}
+	/* seccion historia */
+	.historia img{
+		display: block;
+		
+	}
+	.historia .pedro{
+		display: none;
+	}
+	.historia .info {
+   		padding-left: 15px;
+		padding-top: 10%;
+	}
+	.historia .info p{
+		line-height: 30px;
+	}
+	
+	/* señor de los trabajos */
+	.s-trabajos {
+		margin-top: 50px;
+	}
+	.s-trabajos-img{
+		display: block;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	
+	.s-trabajos-img-max{
+		display: none;
+		
+	}
+	.s-trabajos p {
+		line-height: 30px;
+	}
+	
+	.s-trabajos .historia-p {
+    
+		border-left: 5px solid 
+		#a39222;
+	}
+	/* seccion galeria */
+
+	.galeria{
+		padding-top: 80px;
+
+	}
+	.galeria .info{
+		padding-top: 50px;
+		padding-left: 15px;
+	}
+	
+	/* notaria */
+	.notaria {
+    	padding-top: 50px;
+	}
+	
+	.notaria h2 {
+    	margin-bottom: 25px;
+	}
+	
+	/*contacto */
+	
+	.contacto .text {
+		text-align: center;
+	}
+
+	
+	.contacto .comentarios ul{
+		margin-top: 50px;
+	}
+	.contacto .comentarios ul li{
+		text-align: center;
+	}
+	
+}
+
+
+@media screen and (max-width: 465px){
+	
+	.banner{
+		background: url("../img/banner-min-2-ex.jpg") center center no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		
+		
+		
+		
+	}
+	.banner h1 {
+		font-size: 28px;
+		text-align: center;
+		margin-top: 55%;
+	}
+	.banner .title strong {
+		font-size: 32px;	
+	}
+
+	.banner .media{
+		display: none;
+	}
+	
+	
+	/* contacto */
+	.notaria .text{
+		display: none;
+	}
+	
+	.bienvenidos {
+   
+		padding-top: 50px;
+
+	}
+	
+	
+}
+
+
+@media screen and (max-width: 452px){
+	
+	
+	
+	/* contacto */
+	.notaria .text{
+		display: none;
+	}
+	
+	
+}
