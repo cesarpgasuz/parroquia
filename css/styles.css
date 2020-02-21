@@ -18,16 +18,12 @@ body{
 	min-height: 56px;
 }
 
-.navbar ul li a{
-	margin-left: 48px;
-	
 
-}
 .navbar ul li a{
 	color: #fff;
 	font-size: 16px;
 	text-decoration: none;
-
+	margin-left: 48px;
 	
 }
 .navbar ul li a:hover{
@@ -199,6 +195,38 @@ body{
 
 }
 
+
+/* ventana modal sacerdotes */
+.sacerdotes .modal-content{
+	border: none;
+}
+.sacerdotes .modal-content .modal-header{
+	background: #a39222;
+	color: #fff;
+	border-bottom: none;
+}
+.sacerdotes .modal-content .modal-header h5{
+	text-align: center;
+	margin-left: auto;
+}
+.sacerdotes .modal-content .modal-body ul li{
+	font-weight: bold;
+}
+.sacerdotes .modal-content .modal-body span{
+	margin-right: 30px;
+	font-weight: normal;
+	color: #848484;
+}
+
+.sacerdotes .modal-content .modal-footer button{
+	background: #00161c;
+	color: #fff;
+}
+
+
+
+
+/* -------------------------------*/
 
 
 /* señor de los trabajos */
@@ -757,11 +785,13 @@ footer{
 	right: 25px;
 	color: #00161c;
 	border-bottom: 2px solid #bca618;
+	outline: none;
 }
 
 .blog .card .card-body p a:hover{
 	color: #bca618;
 	border-bottom: 2px solid #bca618;
+	
 
 }
 
@@ -789,7 +819,265 @@ footer{
 
 
 
-/* diseno responsive */
+/* estilos pagina noticia */
+/* seccion blog */
+
+.noticia-info{
+	
+	background: url("../img/banner-info.jpg") center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 120px;
+	width: 100%;
+
+}
+
+
+.noticia-info h1{
+	color: #fff;
+	margin-top: 120px;
+	font-size: 32px;
+}
+.noticia-info h1 strong{
+	font-size: 42px;
+	color: #bca618;
+}
+
+.noticia-body{
+	padding-top: 100px;
+	padding-bottom: 200px;
+	width: 100%;
+
+}
+.noticia-body h4{
+	font-size: 32px;
+	border-left: 8px solid #bca618;
+	padding-left: 25px;
+	margin-bottom: 25px;
+	font-weight: bold;
+
+}
+.noticia-body ul li{
+	font-size: 14px;
+}
+.noticia-body ul li:first-child{
+	color: #bca618;
+	font-weight: bold;
+}
+.noticia-body p{
+	line-height: 32px;
+	font-size: 16px;
+	padding-right: 25px;
+	margin-top: 35px;
+}
+.noticia-body img{
+	margin-top: 60px;
+}
+
+
+
+/* pagina galeria */
+
+.galeria-body{
+	margin-top: 100px;
+	margin-bottom: 200px;
+	width: 100%;
+	position: relative;
+}
+.galeria-body .btn-subir-img{
+	padding: 8px 40px 8px 40px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	outline: none;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	background: #bca618;
+	margin-bottom: 35px;
+	position: relative;
+	overflow: hidden;
+	
+}
+
+.galeria-body .btn-subir-img:hover{
+	background: #00161c;
+	color: #fff;
+	outline: none;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+.galeria-body .btn-subir-img:visited{
+	text-decoration: none;
+}
+.galeria-body .btn-subir-img span{
+	margin-left: 5px;
+	display: inline-block;
+}
+.galeria-body .btn-subir-img:hover > span{
+	animation: subir 0.7s ease;
+}
+
+@keyframes subir {
+	from{
+		transform: translateY(50px);
+	}
+	
+	to{
+		transform: translateY(0px);
+	}
+  		
+}
+
+
+.galeria-body .categorias li{
+	line-height: 32px;
+	color: #818181;
+	font-size: 15px;
+	
+}
+.galeria-body .categorias li:hover{
+	color: #00161c;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.galeria-body .categorias-dr{
+	display: inline-block;
+}
+.galeria-body .categorias-dr button{
+	padding: 8px 50px 8px 50px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	outline: none;
+	background: #00161c;
+	display: none;
+}
+.dropdown-menu{
+	border: 2px solid #bca618 !important; 
+}
+.galeria-body .categorias-dr ul li:hover{
+	cursor: pointer;
+	background: #bca618;
+	color: #fff;
+}
+
+	
+
+.galeria-items .imagen-item{
+	width: 100%;
+	height: 250px;
+
+}
+.galeria-items .imagen-item::before{
+	background: #00161c;
+	content: "";
+	width: 100%;
+	height: 250px;
+	position: absolute;
+	opacity: 0%;
+}
+
+.galeria-items .card{
+	margin-bottom: 12%;
+	border: none;
+	
+}
+.galeria-items .card .card-text{
+	font-size: 14px;
+	font-weight: bold;
+}
+.img-tum a:link{
+	text-decoration: none;
+	outline: none;
+	color: #212529;
+}
+.img-tum a:visited{
+	color: #212529;
+}
+.img-tum a:hover .card-body{
+	background: #00161c;
+	color: #fff;
+	
+}
+.img-tum a:hover .imagen-item::before{
+	opacity: 35%;
+	
+}
+
+
+/* ventana modal galeria*/
+
+.modal-content{
+	border: none !important;
+}
+
+.gal-ventana .contenido{
+	padding: 2%;
+}
+.gal-ventana .contenido h5{
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 25px;
+}
+.gal-ventana .contenido p{
+	font-size: 14px;
+	color: #525252;
+	line-height: 26px;
+	text-align: left;
+	overflow: auto;
+	max-height: 350px;
+}
+.gal-ventana img{
+	max-height: 500px;
+}
+.gal-ventana .close-img{
+	position: absolute;
+	right: -20px;
+	top: -20px;
+	background: #00161c;
+	border: none;
+	font-size: 28px;
+	border-radius: 100px;
+	width: 2em;
+	height: 2em;
+	color: white;
+	outline: none;
+	z-index: 100000;
+	
+}
+.gal-ventana .modal-footer{
+
+    justify-content: flex-start;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0;
+    padding-left: 1rem;
+    border-top: none;
+    
+}
+.gal-ventana .modal-footer ul li{
+	font-size: 14px;
+}
+.gal-ventana .modal-footer ul li:nth-child(2){
+	color: #bca618;
+	font-weight: bold;
+}
+
+
+
+
+/* ------------------------diseno responsive-------------------------------------------------------- */
 
 @media screen and (max-width: 1920px){
 	.banner .media{
@@ -946,6 +1234,23 @@ footer{
 	.contacto .comentarios ul{
 		margin-top: 10px;
 	}
+	
+	/* estilos pagina galeria */
+	
+	.galeria-body .categorias{
+		display: none;
+
+	}
+	.galeria-body .categorias-dr button{
+		display: inline-block;
+		margin-left: 25px;
+		
+	}
+	.galeria-body .galeria-items{
+		margin-top: 50px;
+	}
+	
+	
 }
 	
 
@@ -1045,6 +1350,7 @@ footer{
 		padding-left: 15px;
 	}
 	
+	
 	/* notaria */
 	.notaria {
     	padding-top: 50px;
@@ -1080,6 +1386,7 @@ footer{
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		
+		
 	}
 	.banner-info p{
 		padding-right: 25%;
@@ -1102,7 +1409,93 @@ footer{
 	}
 	
 	
+	/* estilos noticias */
+	.noticia-info{
+	
+		background: url("../img/banner-info-min.jpg") center center no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		padding-bottom: 80px;
+		
+	}
+	.noticia-info h1{
+		margin-top: 80px;
+	}
+	.noticia-body{
+		padding-top: 50px;
+	}
+	.noticia-body h4{
+		font-size: 28px;
+	}
+	
+	.noticia-body img{
+		margin-top: 30px;
+	}
+	
+	/* estilos pagina galeria */
+	
+	.galeria-body{
+		margin-top: 50px;
+	}
+	.galeria-body .lateral{
+		justify-content: space-around;
+		display: flex;
+	}
+	.galeria-body .categorias-dr button{
+		margin-left: 0;
+	}
+	
+	.gal-ventana .max, .gal-ventana .modal-dialog{
+		width: 100%;
+		top: 2%;
+		left: 0;
+		margin: auto;
+		height: 100%;
+		border-radius: 0;
+
+	}
+	.modal-content{
+		border-radius: 0 !important;
+	}
+	.gal-ventana .contenido h5 {
+		
+		font-size: 18px;
+		margin-top: 25px;
+		
+	}
+	
 }
+
+
+
+
+
+@media screen and (max-width: 575px){
+	.gal-ventana .max, .gal-ventana .modal-dialog{
+		top: 0;
+	}
+	.gal-ventana .close-img{
+		position: fixed;
+		right: 1.2%;
+		top: 1%;
+		z-index: 10001;
+
+	}
+	 .modal, .modal-content-img{
+		height: 100% ;
+	}
+	.gal-ventana .modal-body{
+		background: #fff;
+	}
+	
+	
+}
+
+
+
+
 
 
 @media screen and (max-width: 465px){
@@ -1157,6 +1550,28 @@ footer{
 		padding-right: 0;
 	}
 	
+	/* contenido noticia*/
+	.noticia-info{
+		text-align: center;
+		background: url("../img/banner-info-min-2.jpg") center center no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	}
+	.noticia-body h4{
+		font-size: 24px;
+	}
+	.noticia-body p{
+		line-height: 30px;
+		font-size: 14px;
+	}
+	.noticia-body img{
+		margin-top: 30px;
+	}
+	
+	
+	/* estilos pagina galeria */
 	
 	
 	
@@ -1173,7 +1588,35 @@ footer{
 	}
 	
 	
+	/* estilos pagina galeria */
+	
+	.galeria-body .lateral{
+		display: block;
+		
+	}
+	.galeria-body .lateral .btn-subir-img{
+		display: block;
+		width: 100%;
+	}
+	.galeria-body .categorias-dr {
+		display: block;
+	}
+	.galeria-body .categorias-dr button {
+		display: block;
+		width: 100%;
+	}
+	.dropdown-menu{
+		width: 100%;
+	}
+	
+	
+	
+	
 }
+
+
+
+
 
 
 
