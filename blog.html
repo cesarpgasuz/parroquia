@@ -31,7 +31,7 @@
 		
 	 <nav class="navbar navbar-expand-lg fixed-top">
 		<div class="container">
-			<a class="navbar-brand" href="#"><span class="icon-cross"></span> <span>Parroquia San Pedro Apóstol</span></a>
+			<a class="navbar-brand" href="#"><span class="icon-cross1"></span> <span>Parroquia San Pedro Apóstol</span></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -346,7 +346,7 @@
 				<div class="col-lg-6 col-md-6 col-sm-12 comentarios">
 					<ul style="text-align: right" class="list-unstyled">
 						<li>Escribenos y dejanos tus comentarios, sugerencias o cualquier cosa que nos quieras decir para mejorar tu experiencia.</li>
-						<li><button class="btn-contacto" type="submit">Contactar</button></li>
+						<li><button class="btn-contacto" type="button" data-toggle="modal" data-target="#modalcontacto">Contactar</button></li>
 					</ul>
 				</div>
 
@@ -354,6 +354,46 @@
 			 
 		  </div>
 	  </section>
+		
+		<!-- ventana modal contacto -->
+	<div class="modal fade" id="modalcontacto" tabindex="-1" role="dialog" aria-labelledby="modalcontacto" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Contactar</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<form name="contacto" id="formcontacto">
+				<div class="modal-body">
+					
+					 <div class="form-group">
+						<input name="nombre" type="text" class="form-control" id="nombre-cont" placeholder="Nombre" required>
+					  </div>
+					  <div class="form-group">
+						<input name="email" type="email" class="form-control" id="email-cont" placeholder="Correo electronico" required>
+					  </div>
+					  <div class="form-group">
+						<input name="asunto" type="text" class="form-control" id="asunto-cont" placeholder="Asunto" required>
+					  </div>
+					  <div class="form-group">
+						<textarea name="mensaje" rows="5" class="form-control" id="mensaje-cont" placeholder="Mensaje" required></textarea>
+					  </div>
+					
+					
+				</div>
+				<div class="modal-footer">
+					<button type="reset" class="btn">Borrar</button>
+					<button type="submit" class="btn">Enviar Mensaje</button>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+		
+		
+		
 	
       <footer>
 		  <div class="container">
@@ -364,6 +404,18 @@
 			</div>
 		  </div>
 	  </footer>
+		
+		
+		
+	<nav class="navbar fixed-bottom" id="menu-2">
+		  
+			 <a class="navbar-brand" href="index.html"><i class="icon-home"></i><br><p>Inicio</p></a>
+			 <a class="navbar-brand" href="index.html#avisos"><i class="icon-notifications"></i><br><p>Avisos</p></a>
+			 <a class="navbar-brand" href="#"><i class="icon-user-solid-circle"></i><br><p>Blog</p></a>
+			 <a class="navbar-brand" href="galeria.html"><i class="icon-photo"></i><br><p>Galeria</p></a>
+			 <a class="navbar-brand" href="index.html#notaria"><i class="icon-user-plus"></i><br><p>Notaria</p></a>	
+		   
+	</nav>
 
 
     <!-- Optional JavaScript -->

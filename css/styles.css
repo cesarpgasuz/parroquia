@@ -1,8 +1,16 @@
-/*html{
-    scroll-behavior: smooth;
-	transition-duration: 1000ms;
+:root {
+	--cpri: #bca618;
+	--csec: #00161c;
 }
-*/
+
+
+html{
+    scroll-behavior: smooth;
+	
+}
+
+
+
 body{
 	font-family: 'Lato', sans-serif !important;
 	
@@ -11,6 +19,10 @@ body{
 
 
 /* estilo menu */
+
+#menu-2{
+	display: none !important;
+}
 
 
 .navbar{
@@ -27,7 +39,7 @@ body{
 	
 }
 .navbar ul li a:hover{
-	border-bottom: 4px solid #a39222;
+	border-bottom: 4px solid var(--cpri);
 	text-decoration: none;
 	padding-bottom: 1em;
 }
@@ -40,7 +52,7 @@ body{
 
 .menu{
 	box-shadow: rgba(0, 0, 0, 0.05) 0px 14px 19px -1px;
-	background: #00161c;
+	background: var(--csec);
 }
 
 
@@ -60,6 +72,7 @@ body{
 	right: 0;
 	z-index: 0;
 }
+
 .banner .media{
 	margin-top: 40px
 }
@@ -102,7 +115,7 @@ body{
 	padding-bottom: 50px;
 }
 .bienvenidos h2{
-	border-bottom: 2px solid #a39222;
+	border-bottom: 2px solid var(--cpri);
 	padding-bottom: 10px;
 	display: inline-block;
 }
@@ -140,7 +153,21 @@ body{
 	width: 100%;
 	padding-top: 100px;
 	padding-bottom: 50px;
+	position: relative;
+	border: 1px solid red;
 
+}
+.historia .ancla-historia{
+	width: 10px;
+	height: 10px;
+	background: red;
+	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+	left: 0;
+	right: 0;
+	top: -80px;
+	
 }
 
 .historia img{
@@ -173,7 +200,7 @@ body{
 	padding: 8px 60px 8px 60px;
 	margin-bottom: 30px;
 	display: inline-block;
-	background: #bca618;
+	background: var(--cpri);
 	color: #fff;
 	-webkit-box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
 	-moz-box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
@@ -201,9 +228,10 @@ body{
 	border: none;
 }
 .sacerdotes .modal-content .modal-header{
-	background: #a39222;
+	background: var(--cpri);
 	color: #fff;
 	border-bottom: none;
+	border-radius: 0;
 }
 .sacerdotes .modal-content .modal-header h5{
 	text-align: center;
@@ -219,7 +247,7 @@ body{
 }
 
 .sacerdotes .modal-content .modal-footer button{
-	background: #00161c;
+	background: var(--csec);
 	color: #fff;
 }
 
@@ -240,7 +268,7 @@ body{
 }
 
 .s-trabajos h2{
-	border-bottom: 2px solid #a39222;
+	border-bottom: 2px solid var(--cpri);
 	padding-bottom: 10px;
 	display: inline-block;
 }
@@ -254,7 +282,7 @@ body{
 		
 }
 .s-trabajos span{
-	border-bottom: 2px solid #a39222;
+	border-bottom: 2px solid var(--cpri);
 	font-weight: bold;
 }
 
@@ -275,7 +303,7 @@ body{
 	padding-left: 5%;
 	font-size: 16px;
 	text-align: left;
-	border-left: 10px solid #a39222;
+	border-left: 10px solid var(--cpri);
 	
 }
 
@@ -294,7 +322,36 @@ body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	position: relative;
+	border: 1px solid red;
 }
+
+.avisos .ancla-blog{
+	width: 10px;
+	height: 10px;
+	background: red;
+	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+	left: 0;
+	right: 0;
+	top: -80px;
+	
+}
+.avisos .ancla-avisos{
+	width: 10px;
+	height: 10px;
+	background: red;
+	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+	left: 0;
+	right: 0;
+	top: -80px;
+	
+}
+
+
 
 .avisos .card-avisos{
 	margin-top: 60px;
@@ -306,7 +363,7 @@ body{
 
 .avisos .card-avisos .card-header{
 	padding: 0px;
-	background: #a39222;
+	background: var(--cpri);
 	border: none !important;
 }
 .avisos .card-avisos .card-header h4{
@@ -325,7 +382,7 @@ body{
 	font-size: 16px;
 	line-height: 30px;
 	margin-bottom: 20px;
-	border-bottom: 1px dashed #a39222;
+	border-bottom: 1px dashed var(--cpri);
 }
 
 
@@ -334,7 +391,7 @@ body{
 	padding-right: 10%;
 }
 .noticias h4{
-	border-bottom: 2px solid #a39222;
+	border-bottom: 2px solid var(--cpri);
 	padding-bottom: 10px;
 	display: inline-block;
 	font-size: 32px;
@@ -365,25 +422,25 @@ body{
 }
 
 .noticias p a{
-	color: #bca618;
+	color: var(--cpri);
 	text-decoration: none;
 	margin-bottom: 30px;
 	
 }
 .noticias p a:hover{
-	border-bottom: 2px solid #bca618;
+	border-bottom: 2px solid var(--cpri);
 	padding-bottom: 5px;
 }
 
 .noticias p a:visited{
-	color: #bca618;
+	color: var(--cpri);
 }
 
 
 
 .noticias .btn-noticias{
 	
-	border: 1px solid #bca618;
+	border: 1px solid var(--cpri);
 	margin-top: 80px;
 	display: inline-block;
 	text-decoration: none;
@@ -394,6 +451,7 @@ body{
 	border-radius: 100px;
 	-webkit-transition-duration: 0.4s; /* Safari */
   	transition-duration: 0.4s;
+	outline: none;
 	
 }
 
@@ -402,9 +460,8 @@ body{
 
 
 .noticias .btn-noticias:hover{
-	background: #bca618;
+	background: var(--cpri);
 	color: #fff;
-	font-weight: bold;
 }
 
 .noticias .btn-noticias:visited{
@@ -421,6 +478,20 @@ body{
 	width: 100%;
 	padding-bottom: 100px;
 	padding-top: 160px;
+	position: relative;
+	border: 1px solid blue;
+	
+}
+.galeria .ancla-galeria{
+	width: 10px;
+	height: 10px;
+	background: red;
+	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+	left: 0;
+	right: 0;
+	top: 40px;
 	
 }
 
@@ -444,7 +515,7 @@ body{
 }
 
 .galeria h2{
-	border-bottom: 2px solid #a39222;
+	border-bottom: 2px solid var(--cpri);
 	padding-bottom: 10px;
 	display: inline-block;
 	margin-top: 60px;
@@ -462,10 +533,10 @@ body{
 
 .galeria .btn-galeria{
 	
-	border: 1px solid #bca618;
+	border: 1px solid var(--cpri);
 	display: inline-block;
 	text-decoration: none;
-	background: #bca618;
+	background: var(--cpri);
 	color: #fff;
 	padding: 8px 60px 8px 60px;
 	-webkit-box-shadow: -1px 11px 15px -6px rgba(188,166,24,0.68);
@@ -498,9 +569,24 @@ body{
 	padding-top: 100px;
 	width: 100%;
 	padding-bottom: 100px;
+	position: relative;
+	border: 1px solid red;
+	
+}
+.notaria .ancla-notaria{
+	width: 10px;
+	height: 10px;
+	background: red;
+	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+	left: 0;
+	right: 0;
+	top: -40px;
+	
 }
 .notaria h2{
-	border-bottom: 2px solid #a39222;
+	border-bottom: 2px solid var(--cpri);
 	padding-bottom: 10px;
 	margin-bottom: 50px;
 	display: inline-block;
@@ -518,7 +604,7 @@ body{
 /* horario de atencion */
 
 .horario .card{
-	background: #00161c;
+	background: var(--csec);
 	padding-top: 15px;
 	padding-right: 15px;
 	padding-bottom: 30px;
@@ -538,7 +624,7 @@ body{
 	font-weight: 400;
 }
 .horario .card ul .day{
-	color: #a39222;
+	color: var(--cpri);
 	font-size: 18px;
 	
 }
@@ -550,7 +636,7 @@ body{
 .requisitos .card{
 	border-radius: 0;
 	margin-bottom: 20px;
-	border: 1px dotted #a39222;	
+	border: 1px dotted var(--cpri);	
 	
 }
 
@@ -585,11 +671,11 @@ body{
 	
 	text-align: center;
 	color: #fff;
-	background: #bca618;
+	background: var(--cpri);
 }
 .celebraciones .card .card-body{
 	
-	background: #00161c;
+	background: var(--csec);
 	color: #fff;
 	padding: 5% 10% 10% 10%;
 }
@@ -606,7 +692,7 @@ body{
 
 .celebraciones .card ul li span{
 	
-	color: #bca618;
+	color: var(--cpri);
 	
 }
 
@@ -660,7 +746,7 @@ body{
 
 .contacto .btn-contacto:hover{
 	background: #00161c;
-	border: 2px solid #00161c;
+	border: 2px solid var(--csec);
 	color: #fff;
 }
 
@@ -668,9 +754,69 @@ body{
 	text-decoration: none;
 }
 
+
+#modalcontacto .modal-dialog{
+	max-width: 600px;
+}
+
+#modalcontacto .modal-dialog .modal-header{
+	background: var(--cpri);
+	color: #fff;
+	border-radius: 0;
+	
+}
+#modalcontacto .modal-dialog .modal-header .close{
+	color: #fff;
+	outline: none;
+}
+
+#modalcontacto .modal-dialog .modal-body .form-group .form-control{
+	border: 1px solid #D5D5D5;
+	border-radius: 0px;
+	box-shadow: inset 0px 0px 0px;
+}
+
+#modalcontacto .modal-dialog .modal-body .form-group input:focus, #modalcontacto .modal-dialog .modal-body .form-group textarea:focus{
+	
+	border: 1px solid var(--cpri);
+	background: var(--cpri);
+	color: #fff;
+}
+
+#modalcontacto .modal-dialog .modal-body .form-group .form-control::placeholder {
+    color: #747474;
+    
+}
+
+#modalcontacto .modal-dialog .modal-footer{
+	border-top: none;
+}
+#modalcontacto .modal-dialog .modal-footer .btn{
+	background: var(--csec);
+	color: #fff;
+	padding-left: 5%;
+	padding-right: 5%;
+	outline: none !important;
+	border: none !important;
+	
+}
+#modalcontacto .modal-dialog .modal-footer .btn:hover{
+	background: var(--cpri);
+	outline:none !important;
+	border: none !important;
+}
+#modalcontacto .modal-dialog .modal-footer button.btn:focus{
+	
+	box-shadow: 0 0 0 0;
+}
+
+
+
+
+
 footer{
 	text-align: center;
-	background: #00161c;
+	background: var(--csec);
 	color: #fff;
 	font-size: 14px;
 	padding-top: 40px;
@@ -706,12 +852,12 @@ footer{
 }
 .banner-info h1 strong{
 	font-size: 42px;
-	color: #bca618;
+	color: var(--cpri);
 }
 .banner-info p span{
 	font-size: 48px;
 	color: #fff;
-	border-bottom: 2px solid #bca618;
+	border-bottom: 2px solid var(--cpri);
 	padding-bottom: 10px;
 	margin-bottom: 15px;
 	display: inline-block;
@@ -734,7 +880,7 @@ footer{
 	
 }
 .blog h4{
-	border-bottom: 2px solid#a39222;
+	border-bottom: 2px solid var(--cpri);
 	padding-bottom: 10px;
 	display: inline-block;
 	font-size: 32;
@@ -774,7 +920,7 @@ footer{
 	color: #232323;
 }
 .blog .card .card-body .card-text .text-muted{
-	color: #00161c !important;
+	color: var(--csec) !important;
 	font-weight: bold !important;
 }
 
@@ -783,16 +929,13 @@ footer{
 	text-decoration: none;
 	position: absolute;
 	right: 25px;
-	color: #00161c;
-	border-bottom: 2px solid #bca618;
+	color: var(--csec);
+	border-bottom: 2px solid var(--cpri);
 	outline: none;
 }
 
 .blog .card .card-body p a:hover{
-	color: #bca618;
-	border-bottom: 2px solid #bca618;
-	
-
+	color: var(--cpri);
 }
 
 
@@ -802,7 +945,7 @@ footer{
 	padding-bottom: 50px;
 }
 .comentarios-b .title-c{
-	background: #00161c;
+	background: var(--csec);
 	text-align: center;
 	font-size: 20px;
 	color: #fff;
@@ -842,7 +985,7 @@ footer{
 }
 .noticia-info h1 strong{
 	font-size: 42px;
-	color: #bca618;
+	color: var(--cpri);
 }
 
 .noticia-body{
@@ -853,7 +996,7 @@ footer{
 }
 .noticia-body h4{
 	font-size: 32px;
-	border-left: 8px solid #bca618;
+	border-left: 8px solid var(--cpri);
 	padding-left: 25px;
 	margin-bottom: 25px;
 	font-weight: bold;
@@ -863,7 +1006,7 @@ footer{
 	font-size: 14px;
 }
 .noticia-body ul li:first-child{
-	color: #bca618;
+	color: var(--cpri);
 	font-weight: bold;
 }
 .noticia-body p{
@@ -898,7 +1041,7 @@ footer{
 	outline: none;
 	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
-	background: #bca618;
+	background: var(--cpri);
 	margin-bottom: 35px;
 	position: relative;
 	overflow: hidden;
@@ -906,7 +1049,7 @@ footer{
 }
 
 .galeria-body .btn-subir-img:hover{
-	background: #00161c;
+	background: var(--csec);
 	color: #fff;
 	outline: none;
 	-webkit-transition-duration: 0.4s;
@@ -943,7 +1086,7 @@ footer{
 	
 }
 .galeria-body .categorias li:hover{
-	color: #00161c;
+	color: var(--csec);
 	cursor: pointer;
 	font-weight: bold;
 }
@@ -960,7 +1103,7 @@ footer{
 	color: #fff;
 	font-weight: bold;
 	outline: none;
-	background: #00161c;
+	background: var(--csec);
 	display: none;
 }
 .dropdown-menu{
@@ -968,7 +1111,7 @@ footer{
 }
 .galeria-body .categorias-dr ul li:hover{
 	cursor: pointer;
-	background: #bca618;
+	background: var(--cpri);
 	color: #fff;
 }
 
@@ -980,7 +1123,7 @@ footer{
 
 }
 .galeria-items .imagen-item::before{
-	background: #00161c;
+	background: var(--csec);
 	content: "";
 	width: 100%;
 	height: 250px;
@@ -1045,7 +1188,7 @@ footer{
 	position: absolute;
 	right: -20px;
 	top: -20px;
-	background: #00161c;
+	background: var(--csec);
 	border: none;
 	font-size: 28px;
 	border-radius: 100px;
@@ -1070,7 +1213,7 @@ footer{
 	font-size: 14px;
 }
 .gal-ventana .modal-footer ul li:nth-child(2){
-	color: #bca618;
+	color: var(--cpri);
 	font-weight: bold;
 }
 
@@ -1079,11 +1222,47 @@ footer{
 
 /* ------------------------diseno responsive-------------------------------------------------------- */
 
+
+
+
 @media screen and (max-width: 1920px){
 	.banner .media{
-		padding-right: 25%;
+		padding-right: 15%;
+	}
+	
+	
+}
+
+@media screen and (min-width: 1441px){
+	.img-pri{
+		display: none;
+	}
+	.img-sec{
+		display: block;
+		position: relative;
+		top: -10%;
+	}
+	.bienvenidos {
+    	padding-top: 0px;
+	}
+	.xnav{
+		background: var(--csec);
 	}
 }
+
+@media screen and (max-width: 1440px){
+	.img-sec{
+		display: none;
+	}
+	.img-pri{
+		display: block;
+	}
+	.banner .media{
+		padding-right: 15%;
+	}
+}
+
+
 
 
 @media screen and (max-width: 1199px){
@@ -1092,7 +1271,7 @@ footer{
 	
 	.img-pri{
 	
-		width: 650px;
+		width: 680px;
 		height: 100%;
 	}
 	.banner .media{
@@ -1144,8 +1323,7 @@ footer{
 	
 }
 
-@media screen and (max-width: 1121px){
-	
+@media screen and (max-width: 1175px){
 	.banner{
 		background: url("../img/banner-max.jpg") center center no-repeat;
 		background-size: cover;
@@ -1157,20 +1335,31 @@ footer{
 	.img-pri{
 		display: none;
 	}
-	
 	.banner h1{
 		color: #fff;
 	}
 	.banner .title strong{
-		color: #bca618;
+		color: var(--cpri);
 	}
 
 	.fras-sanpedro p{
 		color: #fff;
 	}
-
 	
+	.banner .media{
+		padding-right: 10%;
+	}
+	
+	/* estilos historia */
+	.historia .ancla-historia{
+		
+		top: 0;
+
+	}
 }
+
+
+
 
 @media screen and (max-width: 991px){
 	
@@ -1200,8 +1389,19 @@ footer{
 	.s-trabajos .historia-p{
 		line-height: 30px;
 	}
-
+	
+	/* seccion sacerdotes (historia) */
+	
+	.sacerdotes .modal-content .modal-body span {
+    	margin-right: 10px;
+	}
+	
 	/* seccion noticias */
+
+	.avisos .ancla-avisos{
+		top: 20px;
+
+	}
 	.avisos .card-avisos{
 		margin-top: 100px;
 	
@@ -1251,8 +1451,53 @@ footer{
 	}
 	
 	
-}
+	footer{
+		margin-bottom: 55px;
+	}
 	
+	/* estilos segundo menu */
+	#menu-2{
+		display: flex !important;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+		justify-content: space-around;
+		background: var(--csec) !important;
+		
+		
+	}
+	#menu-2 .navbar-brand {
+		margin-right: 0;
+		margin-left: 3.5%;
+		
+	}
+	#menu-2 a{
+		justify-content: center !important;
+		margin-top: 2px;
+		padding-top: 0px;
+		padding-bottom: 0px !important;
+		color: #fff;
+	}
+	#menu-2 i{
+	
+		font-size: 18px;
+		color: #fff;
+		
+		
+	
+	}
+	#menu-2 p{
+		font-size: 12px;
+		text-align: center;
+		margin-bottom: 2px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 400 !important;
+	}
+	
+	
+}
 
 
 @media screen and (max-width: 767px){
@@ -1301,6 +1546,9 @@ footer{
 		
 	}
 	/* seccion historia */
+	.historia .ancla-historia{
+		top: 8px;
+	}
 	.historia img{
 		display: block;
 		
@@ -1315,6 +1563,11 @@ footer{
 	.historia .info p{
 		line-height: 30px;
 	}
+	
+	.sacerdotes .modal-content .modal-body ul li {
+		font-size: 14px;
+	}
+	
 	
 	/* señor de los trabajos */
 	.s-trabajos {
@@ -1336,13 +1589,16 @@ footer{
 	
 	.s-trabajos .historia-p {
     
-		border-left: 5px solid 
-		#a39222;
+		border-left: 5px solid var(--cpri);
 	}
 	/* seccion galeria */
 
 	.galeria{
 		padding-top: 80px;
+
+	}
+	.galeria .ancla-galeria{
+		top: 0;
 
 	}
 	.galeria .info{
@@ -1465,6 +1721,10 @@ footer{
 		margin-top: 25px;
 		
 	}
+	.categorias-dr .dropdown-menu{
+		top: 55%;
+		left: -30%;
+	}
 	
 }
 
@@ -1473,6 +1733,33 @@ footer{
 
 
 @media screen and (max-width: 575px){
+	
+	
+	
+	
+	.subtitles-pri, .noticias h4, .avisos .card-avisos .card-header h4{
+		font-size: 28px;
+	}
+	
+	.historia .info h3 {
+		font-size: 26px;
+
+	}
+	
+	.bienvenidos p, .historia .info p, .s-trabajos p, .s-trabajos .historia-p, .noticias p,.avisos .card-avisos .list-avisos li, .galeria p, .horario .card ul .day, .horario .card ul li, .requisitos ul li, .celebraciones .card ul .day, .celebraciones .card ul li, .blog .card .card-body .card-text, .noticia-body p{
+		font-size: 14px;
+		
+	}
+	
+	.noticias h5, .blog .card .card-body .card-title{
+		font-size: 16px;
+	}
+	
+	.noticia-body h4 {
+		font-size: 20px !important;
+	}
+	
+	
 	.gal-ventana .max, .gal-ventana .modal-dialog{
 		top: 0;
 	}
@@ -1492,7 +1779,6 @@ footer{
 	
 	
 }
-
 
 
 
@@ -1580,6 +1866,11 @@ footer{
 
 @media screen and (max-width: 452px){
 	
+	.banner-info h1 {
+		
+		margin-top: 80px;
+		
+	}
 	
 	
 	/* contacto */
@@ -1605,18 +1896,42 @@ footer{
 		display: block;
 		width: 100%;
 	}
-	.dropdown-menu{
+	.categorias-dr .dropdown-menu{
 		width: 100%;
+		top: 100%;
+		left: 0;
 	}
-	
-	
 	
 	
 }
 
+@media screen and (max-width: 378px){
+	
+	.banner h1 {
+		margin-top: 32%;
+		margin-bottom: 40%;
+	}
+	
+	.notaria .info ul li {
+		font-size: 14px;
+	}
+}
 
+@media screen and (max-width: 350px){
+	
+	
+	
+	.noticias .btn-noticias {
+		padding: 8px 40px 8px 40px;
+	}
+	.notaria .info ul li {
+		font-size: 13px;
+	}
+	
+}
 
-
-
-
-
+@media screen and (max-width: 300px){
+	.navbar .parro{
+		font-size: 16px;
+	}
+}
