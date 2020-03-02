@@ -154,13 +154,13 @@ body{
 	padding-top: 100px;
 	padding-bottom: 50px;
 	position: relative;
-	border: 1px solid red;
+	
 
 }
 .historia .ancla-historia{
 	width: 10px;
 	height: 10px;
-	background: red;
+	background: transparent;
 	position: absolute;
 	margin-right: auto;
 	margin-left: auto;
@@ -323,13 +323,13 @@ body{
 	-o-background-size: cover;
 	background-size: cover;
 	position: relative;
-	border: 1px solid red;
+	
 }
 
 .avisos .ancla-blog{
 	width: 10px;
 	height: 10px;
-	background: red;
+	background: transparent;
 	position: absolute;
 	margin-right: auto;
 	margin-left: auto;
@@ -341,7 +341,7 @@ body{
 .avisos .ancla-avisos{
 	width: 10px;
 	height: 10px;
-	background: red;
+	background: transparent;
 	position: absolute;
 	margin-right: auto;
 	margin-left: auto;
@@ -425,7 +425,7 @@ body{
 	color: var(--cpri);
 	text-decoration: none;
 	margin-bottom: 30px;
-	
+	outline: none;
 }
 .noticias p a:hover{
 	border-bottom: 2px solid var(--cpri);
@@ -434,6 +434,7 @@ body{
 
 .noticias p a:visited{
 	color: var(--cpri);
+	
 }
 
 
@@ -479,13 +480,13 @@ body{
 	padding-bottom: 100px;
 	padding-top: 160px;
 	position: relative;
-	border: 1px solid blue;
+	
 	
 }
 .galeria .ancla-galeria{
 	width: 10px;
 	height: 10px;
-	background: red;
+	background: transparent;
 	position: absolute;
 	margin-right: auto;
 	margin-left: auto;
@@ -570,13 +571,13 @@ body{
 	width: 100%;
 	padding-bottom: 100px;
 	position: relative;
-	border: 1px solid red;
+	
 	
 }
 .notaria .ancla-notaria{
 	width: 10px;
 	height: 10px;
-	background: red;
+	background: transparent;
 	position: absolute;
 	margin-right: auto;
 	margin-left: auto;
@@ -755,43 +756,43 @@ body{
 }
 
 
-#modalcontacto .modal-dialog{
+#modalimagen .modal-dialog{
 	max-width: 600px;
 }
 
-#modalcontacto .modal-dialog .modal-header{
+#modalimagen .modal-dialog .modal-header{
 	background: var(--cpri);
 	color: #fff;
 	border-radius: 0;
 	
 }
-#modalcontacto .modal-dialog .modal-header .close{
+#modalimagen .modal-dialog .modal-header .close{
 	color: #fff;
 	outline: none;
 }
 
-#modalcontacto .modal-dialog .modal-body .form-group .form-control{
+#modalimagen .modal-dialog .modal-body .form-group .form-control{
 	border: 1px solid #D5D5D5;
 	border-radius: 0px;
 	box-shadow: inset 0px 0px 0px;
 }
 
-#modalcontacto .modal-dialog .modal-body .form-group input:focus, #modalcontacto .modal-dialog .modal-body .form-group textarea:focus{
+#modalimagen .modal-dialog .modal-body .form-group input:focus, #modalimagen .modal-dialog .modal-body .form-group textarea:focus{
 	
 	border: 1px solid var(--cpri);
 	background: var(--cpri);
 	color: #fff;
 }
 
-#modalcontacto .modal-dialog .modal-body .form-group .form-control::placeholder {
+#modalimagen .modal-dialog .modal-body .form-group .form-control::placeholder {
     color: #747474;
     
 }
 
-#modalcontacto .modal-dialog .modal-footer{
+#modalimagen .modal-dialog .modal-footer{
 	border-top: none;
 }
-#modalcontacto .modal-dialog .modal-footer .btn{
+#modalimagen .modal-dialog .modal-footer .btn{
 	background: var(--csec);
 	color: #fff;
 	padding-left: 5%;
@@ -800,12 +801,12 @@ body{
 	border: none !important;
 	
 }
-#modalcontacto .modal-dialog .modal-footer .btn:hover{
+#modalimagen .modal-dialog .modal-footer .btn:hover{
 	background: var(--cpri);
 	outline:none !important;
 	border: none !important;
 }
-#modalcontacto .modal-dialog .modal-footer button.btn:focus{
+#modalimagen .modal-dialog .modal-footer button.btn:focus{
 	
 	box-shadow: 0 0 0 0;
 }
@@ -922,6 +923,13 @@ footer{
 .blog .card .card-body .card-text .text-muted{
 	color: var(--csec) !important;
 	font-weight: bold !important;
+}
+
+.blog .card .card-body .time{
+	position: relative;
+	top: -15px;
+	font-size: 14px;
+	margin-bottom: 0;
 }
 
 .blog .card .card-body p a{
@@ -1077,6 +1085,66 @@ footer{
 	}
   		
 }
+
+
+#modalcontacto .modal-dialog{
+	max-width: 600px;
+}
+
+#modalcontacto .modal-dialog .modal-header{
+	background: var(--cpri);
+	color: #fff;
+	border-radius: 0;
+	
+}
+#modalcontacto .modal-dialog .modal-header .close{
+	color: #fff;
+	outline: none;
+}
+
+#modalcontacto .modal-dialog .modal-body .form-group .form-control{
+	border: 1px solid #D5D5D5;
+	border-radius: 0px;
+	box-shadow: inset 0px 0px 0px;
+}
+
+#modalcontacto .modal-dialog .modal-body .form-group input:focus, #modalcontacto .modal-dialog .modal-body .form-group textarea:focus{
+	
+	border: 1px solid var(--cpri);
+	background: var(--cpri);
+	color: #fff;
+}
+
+#modalcontacto .modal-dialog .modal-body .form-group .form-control::placeholder {
+    color: #747474;
+    
+}
+
+#modalcontacto .modal-dialog .modal-footer{
+	border-top: none;
+}
+#modalcontacto .modal-dialog .modal-footer .btn{
+	background: var(--csec);
+	color: #fff;
+	padding-left: 5%;
+	padding-right: 5%;
+	outline: none !important;
+	border: none !important;
+	
+}
+#modalcontacto .modal-dialog .modal-footer .btn:hover{
+	background: var(--cpri);
+	outline:none !important;
+	border: none !important;
+}
+#modalcontacto .modal-dialog .modal-footer button.btn:focus{
+	
+	box-shadow: 0 0 0 0;
+}
+
+
+
+
 
 
 .galeria-body .categorias li{

@@ -31,18 +31,18 @@
 		
 	 <nav class="navbar navbar-expand-lg fixed-top">
 		<div class="container">
-			<a class="navbar-brand" href="#"><span class="icon-cross"></span> <span>Parroquia San Pedro Apóstol</span></a>
+			<a class="navbar-brand" href="#"><span class="icon-cross1"></span> <span>Parroquia San Pedro Apóstol</span></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarText">
 					<ul class="navbar-nav ml-auto navbar-right">
 						<li class="nav-item"><a href="index.html">Inicio</a></li>
-						<li class="nav-item"><a href="#historia">Historia</a></li>	
-						<li class="nav-item"><a href="#avisos">Avisos</a></li>
+						<li class="nav-item"><a href="index.html#historia">Historia</a></li>
 						<li class="nav-item"><a href="blog.html">Blog</a></li>
+						<li class="nav-item"><a href="index.html#avisos">Avisos</a></li>
 						<li class="nav-item"><a href="galeria.html">Galeria</a></li>
-						<li class="nav-item"><a href="#notaria">Notaria</a></li>
+						<li class="nav-item"><a href="index.html#notaria">Notaria</a></li>
 					</ul>
 				</div>
 		</div>
@@ -67,7 +67,7 @@
 			<div class="row">
 				
 				<div class="col-lg-3 col-md-12 lateral">
-					<button class="btn-subir-img">Subir imagen <span class="icon-arrow-up"></span></button>
+					<button class="btn-subir-img" type="button" data-toggle="modal" data-target="#modalimagen">Subir imagen <span class="icon-arrow-up"></span></button>
 					<ul class="list-unstyled categorias">
 						<li>Mostrar Todo</li>
 						<li>Oraciones</li>
@@ -749,7 +749,7 @@
 					<ul class="list-unstyled text">
 						<li><span>Parroquia</span></li>
 						<li><strong>San Pedro Apostol</strong></li>
-						<li class="redes"><span class="icon-facebook2"></span><span class="icon-instagram"></span></li>
+						<li class="redes"><span class="icon-facebook"></span><span class="icon-instagram"></span></li>
 					</ul>
 				</div>
 				
@@ -764,6 +764,51 @@
 			 
 		  </div>
 	  </section>
+		
+		
+		
+		<!-- ventana modal subir imagen -->
+	<div class="modal fade" id="modalimagen" tabindex="-1" role="dialog" aria-labelledby="modalimagen" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Subir Imagen</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<form name="formimg" id="formimg">
+				<div class="modal-body">
+					 <div class="form-group">
+						<input name="imggaleria" type="file" class="form-control" id="imagengal">
+					 </div>
+					 <div class="form-group">
+						<input name="tituloimg" type="text" class="form-control" id="titulogal" placeholder="Titulo" required>
+					  </div>
+					  <div class="form-group">
+						<input name="nombreimg" type="text" class="form-control" id="nombregal" placeholder="Nombre o Autor" required>
+					  </div>
+					  <div class="form-group">
+						<input name="emailimg" type="email" class="form-control" id="emailgal" placeholder="Correo Electronico" required>
+					  </div>
+					  <div class="form-group">
+						<textarea name="descripcionimg" rows="5" class="form-control" id="descripciongal" placeholder="Descripcion" required></textarea>
+					  </div>
+					  <div class="form-group">
+						<input name="tagimg" type="text" class="form-control" id="tagsgal" placeholder="tag1, tag2, tag3" required>
+					  </div>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="reset" class="btn">Borrar</button>
+					<button type="submit" class="btn">Enviar Mensaje</button>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>	
+		
+		
 		
 		
 		<!-- ventana modal contacto -->
@@ -823,8 +868,8 @@
 	<nav class="navbar fixed-bottom" id="menu-2">
 		  
 			 <a class="navbar-brand" href="index.html"><i class="icon-home"></i><br><p>Inicio</p></a>
-			 <a class="navbar-brand" href="index.html#avisos"><i class="icon-notifications"></i><br><p>Avisos</p></a>
 			 <a class="navbar-brand" href="blog.html"><i class="icon-user-solid-circle"></i><br><p>Blog</p></a>
+			 <a class="navbar-brand" href="index.html#avisos"><i class="icon-notifications"></i><br><p>Avisos</p></a>
 			 <a class="navbar-brand" href="#"><i class="icon-photo"></i><br><p>Galeria</p></a>
 			 <a class="navbar-brand" href="index.html#notaria"><i class="icon-user-plus"></i><br><p>Notaria</p></a>	
 		   
