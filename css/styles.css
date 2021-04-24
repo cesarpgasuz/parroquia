@@ -21,7 +21,7 @@ body{
 /* estilo menu */
 
 #menu-2{
-	display: none !important;
+	display: none;
 }
 
 
@@ -814,7 +814,7 @@ body{
 
 
 
-
+/* pie de pagina */
 footer{
 	text-align: center;
 	background: var(--csec);
@@ -822,6 +822,25 @@ footer{
 	font-size: 14px;
 	padding-top: 40px;
 	padding-bottom: 10px;
+}
+
+
+footer p span:first-child{	
+	color: #fff;
+	padding: 2px;
+	font-weight: bold;
+	
+	
+}
+footer p span:last-child{	
+	color: #F8FF00;
+	
+	
+	
+}
+footer p a:link{
+	text-decoration: none;
+	outline: none;
 }
 
 
@@ -1123,21 +1142,21 @@ footer{
 #modalcontacto .modal-dialog .modal-footer{
 	border-top: none;
 }
-#modalcontacto .modal-dialog .modal-footer .btn{
+#modalcontacto .modal-dialog .modal-footer button{
 	background: var(--csec);
 	color: #fff;
-	padding-left: 5%;
-	padding-right: 5%;
+	
 	outline: none !important;
 	border: none !important;
+
 	
 }
-#modalcontacto .modal-dialog .modal-footer .btn:hover{
+#modalcontacto .modal-dialog .modal-footer button:hover{
 	background: var(--cpri);
 	outline:none !important;
 	border: none !important;
 }
-#modalcontacto .modal-dialog .modal-footer button.btn:focus{
+#modalcontacto .modal-dialog .modal-footer button:focus{
 	
 	box-shadow: 0 0 0 0;
 }
@@ -1523,42 +1542,46 @@ footer{
 		margin-bottom: 55px;
 	}
 	
-	/* estilos segundo menu */
+	.ancla{
+		height: 28px;
+		width: 28px;
+		position: fixed;
+		margin: auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: -92%;
+	    border: 1px solid red;
+	    z-index: 100000;
+	}
+/* estilos segundo menu */
 	#menu-2{
-		display: flex !important;
+		display: flex;
 		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 0px !important;
-		margin-bottom: 0px !important;
 		justify-content: space-around;
 		background: var(--csec) !important;
-		
+		width: 100%;
+    	height: auto;
+   		padding-top: 10px;
+    	padding-bottom: 10px;
+    	padding-left: 0.1rem;
+	    padding-right: 0px;
+	    margin-left: auto;
+	    margin-right: auto;
 		
 	}
 	#menu-2 .navbar-brand {
-		margin-right: 0;
-		margin-left: 0;
+		margin: 0;
+		padding: 0;
 		
 	}
-	#menu-2 a{
-		justify-content: center !important;
-		margin-top: 2px;
-		padding-bottom: 0px !important;
-		color: #fff;
-		text-align: center;
-		margin-bottom: 2px;
-		font-family: 'Lato', sans-serif;
-		font-weight: 400 !important;
-		
-	}
-	#menu-2 a i{
-	
-		font-size: 22px;
-		color: #fff;
-		
-		
-	
+	#menu-2 a:link{
+		font-size: 24px;
+	    color: white;
+	    display: inline-block;
+	    margin: 0;
+    	padding: 0;
+    	text-decoration: none;
 	}
 	
 	
